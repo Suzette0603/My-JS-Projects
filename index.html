@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(d4.jpg);
+            background-repeat: no-repeat;
+            position: relative;
+            background-size: cover;
+
+        }
+        .id{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            color: wheat;
+        }
+        label{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 15px;
+            color: whitesmoke;
+            border: 1px solid lightseagreen ;
+        }
+        button{
+            width: 125px;
+            height: 25px;
+            border-radius: 25px;
+            background-color: whitesmoke;
+            color: black;
+            border: 3px solid lightseagreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="id">
+       <h1>Hello Welcome</h1>
+
+       <p>Glad to have you.</p>
+
+        <button onclick="getAnswer()">Connect with us</button>
+        <script>
+        function getAnswer() {
+
+               const userAnswer = confirm("Do you have an account ?");
+               if( userAnswer == true ) {
+                window.location.href = "login.html";
+               } else {
+                window.location.href = "register.html";
+               }
+        }
+        </script>
+
+
+    </div>
+</body>
+</html>
